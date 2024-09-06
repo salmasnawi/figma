@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      min-height: 100vh;
+
+      background: url(images/Bitmap.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      overflow-y: auto;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Merriweather;
+      box-sizing: border-box;
+
+    }
+
+    nav {
+      vertical-align: middle;
+      padding: 0px 20px;
+
+    }
+
+    .btn:hover {
+      cursor: pointer;
+      background: #222F33;
+
+    }
+
+    h1 {
+      margin-top: 50px;
+      text-align: center;
+      color: #222f33;
+      color: #ffffff;
+      font-size: 30px;
+      font-family: Merriweather;
+      font-weight: 900;
+      word-wrap: break-word;
+    }
+
+    .border {
+      width: 50%;
+      height: 2px;
+      background-color: wheat;
+      margin: 4px auto;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: 0.3s;
+      background: #222F33;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid transparent;
+      transition: .3s;
+
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1);
+      transform: translateY(-10px);
+      background-color: #646D70;
+    }
+
+    .card-title {
+      font-size: 20px;
+      margin-bottom: 0.5rem;
+      font-weight: 900;
+      color: #fbfeff;
+      font-family: Rubik;
+
+    }
+
+    .card-text {
+      color: #ffffff;
+    }
+
+    .slider-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .center-slider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .card-img-top {
+      width: 250px;
+      height: 200px;
+
+    }
+
+    .buy {
+      border: 0;
+      background: #34495e;
+      color: #fff;
+      padding: 12px 50px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .buy:hover {
+      background: #ddd;
+      color: #34495e;
+    }
+
+    .footer {
+      width: 100%;
+      background-color: #222F33;
+      padding: 10px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+  </style>
+  <title>gallery</title>
+  <link rel="icon" href="house-heart-fill.svg" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="Background" style="width: 100%; height: 100%; border-radius: 4px">
+            <img src="images/Logomark.jpg" />
+            <img src="images/Wordmark.jpg" />
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="btn btn-outline-light shadow-sm d-sm d-block" aria-current="page" style="color: #fffefa;"
+                href="the ffgma.html">Home</a>
+            </li>
+      
+            <li class="nav-item">
+              <a class="btn btn-outline-light shadow-sm d-sm d-block" style="color: #fcfdff; margin: 0px 15px"
+                href="the join.html">join us</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-light shadow-sm d-sm d-block" style="color: #ffffff; margin: 0px 15px"
+                href="our service.html">our service</a>
+            </li>
+            <li class="nav-item">
+              <a href="about us.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                style="color: #ffffff; margin: 0px 15px">about us</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact us.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                style="color: #ffffff; margin: 0px 15px">contact us</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                style="color: #ffffff; margin: 0px 15px">gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="FAQ.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                style="color: #ffffff; margin: 0px 15px">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="our featuers.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                style="color: #ffffff; margin: 0px 15px">our featuers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <h1>our collection</h1>
+  <div class="border"></div>
+
+
+  <div class="center-slider">
+    <div class="slider-container">
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="images/p1.jpg" class="card-img-top" alt="Card Image 1">
+                  <div class="card-body">
+                    <h5 class="card-title">wood house</h5>
+                    <p class="card-text">this house is designed in moddern design,however they are enviromentally
+                      friendly and preserve the enviroment </p>
+
+                    <button class="btn btn-dark buy"> buy it Now!</button>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="images/p2.jpg" class="card-img-top" alt="Card Image 2">
+                  <div class="card-body">
+                    <h5 class="card-title">cool house</h5>
+                    <p class="card-text">this house is designed in moddern design,however they are enviromentally
+                      friendly and preserve the enviroment </p>
+
+                    <button class="btn btn-dark buy"> buy it Now!</button>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="images/p3.jpg" class="card-img-top" alt="Card Image 3">
+                  <div class="card-body">
+                    <h5 class="card-title">pretty</h5>
+                    <p class="card-text">this house is designed in moddern design,however they are enviromentally
+                      friendly and preserve the enviroment </p>
+
+                    <button class="btn btn-dark buy"> buy it Now!</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="images/p4.jpg" class="card-img-top" alt="Card Image 4">
+                  <div class="card-body">
+                    <h5 class="card-title">happy</h5>
+                    <p class="card-text">this house is designed in moddern design,however they are enviromentally
+                      friendly and preserve the enviroment </p>
+
+                    <button class="btn btn-dark buy"> buy it Now!</button>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="images/p5.jpg" class="card-img-top" alt="Card Image 5">
+                  <div class="card-body">
+                    <h5 class="card-title">cold house</h5>
+                    <p class="card-text">this house is designed in moddern design,however they are enviromentally
+                      friendly and preserve the enviroment </p>
+
+                    <button class="btn btn-dark buy"> buy it Now!</button>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="images/p6.jpg" class="card-img-top" alt="Card Image 6">
+                  <div class="card-body">
+                    <h5 class="card-title">sunny house</h5>
+                    <p class="card-text">this house is designed in moddern design,however they are enviromentally
+                      friendly and preserve the enviroment</p>
+                    <button class="btn btn-dark buy"> buy it Now!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="InfoEcoCabinsCom"
+      style=" width: 20%;;opacity: 0.60; color: #FFFFFF; font-size: 12px; font-family: Rubik; font-weight: 500;">
+      info@eco-cabins.com</div>
+    <div class="LogoLogoHorizontal"
+      style=" width: 100%; height: 100%; padding-left: 0.16px; padding-right: 0.05px; justify-content: center; align-items: center; gap: 6.07px; display: inline-flex">
+      <img class="Logo" style="width: 32.66px; height: 25.85px" src="images/Logomark.jpg" />
+      <img class="Wordmark" style="width: 96.07px; height: 15.41px" src="images/Wordmark.jpg" />
+    </div>
+    <div class="Cookies"
+      style=" padding: 15px ;opacity: 0.60;  color: white; font-size: 12px; font-family: Rubik; font-weight: 500; word-wrap: break-word">
+      Cookies</div>
+    <div class="Privacybeleid"
+      style="opacity: 0.60;  color: white; font-size: 12px; font-family: Rubik; font-weight: 500; word-wrap: break-word">
+      Privacybeleid</div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

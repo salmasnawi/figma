@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>figma</title>
+  <link rel="shortcut icon" href="box2-heart.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .four {
+      margin-top: 80px !important;
+      margin-bottom: 80px !important;
+      
+    }
+    .title-content {
+      padding: 0px;
+    }
+    header {
+      min-height: 100vh;
+      background: url(images/Bitmap.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 200px;
+    }
+    p {
+      color: #FFFFFF;
+      font-size: 40px;
+      font-family: Merriweather;
+      font-weight: 900;
+      padding: 0;
+    }
+    h6 {
+      padding-top: 80px;
+      color: white;
+      font-size: 16px;
+      font-family: Rubik;
+      font-weight: 500;
+      word-wrap: break-word
+    }
+    button {
+      font-size: 12px;
+      font-family: Rubik;
+      font-weight: 500;
+      word-wrap: break-word;
+      padding: 20%;
+    }
+    span {
+      color: #FFF;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Rubik;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    body {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      background-color: #ffffff;
+    }
+    h5 {
+      color: var(--Color-Dark-green, #222F33);
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Merriweather;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      padding-left: 100px;
+    }
+    .two-txt {
+      color: var(--Greys-Light-grey, #646D70);
+      font-family: Rubik;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      padding-left: 100px;
+      width: 100%;
+    }
+    .two {
+      background-color: #fcfcfc;
+      padding: 20px;
+      width: 900px;
+      height: 380px;
+      margin-bottom: 0%;
+      z-index: 10;
+      position: absolute;
+      top: 630px;
+    }
+    @media (max-width: 1100px) {
+      .pic {
+        position: static !important;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .col-lg-6 {
+        width: 100% !important;
+      }
+      .gx-1 {
+        flex-shrink: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        margin-top: 0px !important;
+      }
+      .title-content {
+        width: 100% !important;
+        opacity: 0.70;
+        color: #646D70;
+        font-size: 12px;
+        font-family: Rubik;
+        font-weight: 400;
+        line-height: 22px;
+        word-wrap: break-word;
+      }
+      .text-end {
+        text-align: center !important;
+      }
+      .two-txt {
+        width: 40% !important;
+        padding: 0 !important;
+        margin-top: 0 !important;
+      }
+      h5 {
+        margin-top: 0px !important;
+        width: 60% !important;
+        padding: 0 !important;
+        align-items: self-end;
+      }
+      .mt-5 {
+        margin-top: 0px !important;
+      }
+      .pic {
+        position: static !important;
+        margin: 0 auto;
+      }
+      .two{
+        position: static;
+        width: auto!important;
+        height: auto;
+        margin-bottom: 50%;
+        text-align: center;
+      
+      }
+    }
+    @media (max-width: 573px){
+         .two{
+        position: static;
+        width: auto!important;
+        height: auto;
+        margin-bottom: 50%;
+        text-align: center;
+      
+      }
+
+    }
+    .pic {
+      position: absolute;
+      top: 29%;
+      right: 210px;
+      z-index: 100;
+    }
+    .three {
+      background-color: #222F33;
+      padding: 50px 80px;
+      padding-top: 150px;
+      display: flex;
+      justify-items: baseline;
+      justify-content: space-between;
+    }
+    .title {
+      color: #222F33;
+      font-size: 18px;
+      font-family: Merriweather;
+      font-weight: 900;
+      word-wrap: break-word
+    }
+    .title-content {
+      width: 50%;
+      opacity: 0.70;
+      color: #646D70;
+      font-size: 12px;
+      font-family: Rubik;
+      font-weight: 400;
+      line-height: 22px;
+      word-wrap: break-word;
+    }
+    .footer {
+      width: 100%;
+      background-color: #222F33;
+      padding: 10px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .proate {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly !important;
+      position: relative;
+      bottom: 300px;
+    }
+
+    .roate {
+      rotate: 90deg;
+      margin-left: 100%;
+      padding: 5px 50px;
+      font-family: Rubik;
+      font-size: 12px;
+    }
+  </style>
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="Background" style="width: 100%; height: 100%; border-radius: 4px">
+            <img src="images/Logomark.jpg" class="img-fluid" alt="Logomark">
+            <img src="images/Wordmark.jpg" class="img-fluid" alt="Wordmark">
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active p-lg-3" aria-current="page" style="color: aliceblue;" href="#home">Home</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 " style="color:white; margin: 0px 20px;" href="our team.html">our team</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" style="color:white; margin: 0px 20px;" href="the join.html">join us</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" style="color:rgb(255, 255, 255); margin: 0px 20px; "
+                href="our service.html">our service</a>
+
+            </li>
+          </ul>
+          <a href="contact us.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+            style="margin: 0px 20px;">contact us</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row  justify-content-between">
+        <div class="col-lg-6 mb-4 text-center text-md-start">
+          <h6>Duurzame tiny huisjes</h6>
+          <p>
+            Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke materialen
+
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5 text-center text-md-start align-self-center play">
+          <svg xmlns="http://www.w3.org/2000/svg" width="52" height="32" viewBox="0 0 52 32" fill="none">
+            <g filter="url(#filter0_d_0_27)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+                fill="white" />
+            </g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19 16.5L14 20V13L19 16.5Z" fill="#222F33" stroke="#222F33"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <defs>
+              <filter id="filter0_d_0_27" x="-20" y="-18" width="72" height="72" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha" />
+                <feOffset dy="2" />
+                <feGaussianBlur stdDeviation="10" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_27" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_27" result="shape" />
+              </filter>
+            </defs>
+          </svg>
+          <span>Bekijk de film</span>
+        </div>
+        <div class="proate">
+          <p class="roate">instagram</p>
+          <br>
+          <br>
+          <p class="roate"> facebook</p>
+          <br>
+          <br>
+          <p class="roate"> linkedn</p>
+        </div>
+      </div>
+  </header>
+  <div class="pic">
+    <img src="images/IMG (2).png" alt="" class="img-fluid">
+  </div>
+  <div class="two">
+    <div class="row ">
+      <div class="col-lg-6 col-md-3  text-lg-start mt-5" style="width:auto;">
+        <h5>Duurzame materialen </h5>
+        <div class="two-txt" style="width:80%; ">
+          Alle EcoCabins hebben een hoge isolatiewaarde, worden geproduceerd met indien mogelijk duurzame en/of
+          natuurlijke materialen en hebben als opvallende uiterlijke kenmerk de ‘ronde hoeken’, mogelijk gemaakt door
+          het specifieke materiaalgebruik. De voordelen van bouwen met hout zijn legio: hout is licht, flexibel,
+          isoleert goed en bouwt snel en efficiënt.
+        </div>
+        <button class="btn btn-outline-dark" style="margin-left: 100px; margin-top: 10px;">less meer</button>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid ">
+    <div class="container-fluid" style="background-color: #FFF;">
+      <div class="row three">
+        <div class="col-lg-6 text-center text-md-start pt-4">
+          <div class="text">
+            <div class="Innovatie" style="
+                    color: white;
+                    font-size: 30px;
+                    font-family: Merriweather;
+                    font-weight: 900;
+                    word-wrap: break-word;
+                  ">
+              Innovatie
+            </div>
+            <div>
+              <div class="WijHebbenAlsDoel " style="
+                      opacity: 0.7;
+                      color: white;
+                      font-size: 20px;
+                      font-family: Rubik;
+                      font-weight: 400;
+                      line-height: 24px;
+                      word-wrap: break-word;
+                    ">
+                Wij hebben als doel om de EcoCabins voortdurend verder te
+                ontwikkelen en innoveren, zodat de EcoCabins uiteindelijk
+                100% duurzaam en circulair zijn. Voorwaarde hierbij is dat
+                de EcoCabins betaalbaar blijven. Met behulp van de zon, de
+                wind en de beste isolatie geniet u van.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-end text-md-start ms-10 mt-5" style="
+                opacity: 0.7;
+                color: white;
+                font-size: 20px;
+                font-family: Rubik;
+              ">
+          Alle EcoCabins hebben een hoge isolatiewaarde, worden
+          geproduceerd met indien mogelijk duurzame en/of natuurlijke
+          materialen en hebben als opvallende uiterlijke kenmerk de<br />
+          ‘ronde hoeken’, mogelijk gemaakt door het specifieke
+          materiaalgebruik De voordelen van bouwen.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid px-4 text-center">
+    <div class="row gx-5">
+      <div class="col four">
+        <div class="p-3">
+          <img src="images/C0283T01.png" alt="" srcset="">
+        </div>
+      </div>
+      <div class="col four">
+        <div class="container overflow-hidden text-lg-start">
+          <div class="row gy-1">
+            <div class="col-6">
+              <div class="p-3">
+                <div class="title">Hout</div>
+                <div class="title-content">
+                  De draagconstructies van EcoCabins bestaan uit hout. Hout is duurzaam en.</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3">
+                <div class="title">Glaswol isolatie</div>
+                <div class="title-content">
+                  De combinatie van glaswol met een houtskelet constructie geeft een.</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3">
+                <div class="title">Afwerking</div>
+                <div class="title-content">
+                  De draagconstructies van EcoCabins bestaan uit hout. Hout is duurzaam en.</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3">
+                <div class="title">Triple glas</div>
+                <div class="title-content">
+                  De combinatie van glaswol met een houtskelet constructie geeft een.
+                </div>
+              </div>
+
+            </div>
+            <div class="col-6">
+              <div class="p-3">
+                <div class="title">Stalen onderstel</div>
+                <div class="title-content">
+                  Het stalen onderstel is sterk zijn en heeft de benodigde stijfheid die
+                  .</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3">
+                <div class="title">Infrarood vloer</div>
+                <div class="title-content">
+                  De vloer wordt opgewarmd middels opgewekte warmte uit eigen zonne-energie.
+                  .</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="InfoEcoCabinsCom"
+      style=" width: 20%;;opacity: 0.60; color: #FFFFFF; font-size: 12px; font-family: Rubik; font-weight: 500;">
+      info@eco-cabins.com</div>
+    <div class="LogoLogoHorizontal"
+      style=" width: 100%; height: 100%;justify-content: center; align-items: center; gap: 6.07px; display: inline-flex">
+      <img class="Logo" style="width: 32.66px; height: 25.85px" src="images/Logomark.jpg" />
+      <img class="Wordmark" style="width: 96.07px; height: 15.41px" src="images/Wordmark.jpg" />
+    </div>
+    <div class="Cookies"
+      style=" padding: 15px ;opacity: 0.60;  color: white; font-size: 12px; font-family: Rubik; font-weight: 500; word-wrap: break-word">
+      Cookies</div>
+    <div class="Privacybeleid"
+      style="opacity: 0.60;  color: white; font-size: 12px; font-family: Rubik; font-weight: 500; word-wrap: break-word">
+      Privacybeleid</div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

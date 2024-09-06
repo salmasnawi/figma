@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Rubik;
+        }
+
+
+
+        .heading {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .heading h1 {
+            font-size: 50px;
+            color: rgb(255, 251, 251);
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .heading h1::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            display: block;
+            margin: 0 auto;
+            background-color: #ffffff
+        }
+
+        .heading p {
+            font-size: 30px;
+            color: #ffffff;
+            margin-bottom: 35px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about-image {
+            flex: 1;
+            margin-right: 40px;
+            overflow: hidden;
+            border: 1px solid white;
+            border-radius: 50px;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            transition: 0.5s ease;
+        }
+
+        .about-image:hover img {
+            transform: scale(1.2);
+        }
+
+        .about-content {
+            flex: 1;
+            background: #dddddd52;
+            padding: 10px;
+        }
+
+        .about-content h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .about-content p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #fff4f4;
+        }
+
+        .about-content .read-more {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #ffffff;
+            font-size: 19px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 15;
+            transition: 0.3s ease;
+        }
+
+        .about-content a:hover {
+            color: #fbfeff
+        }
+
+        @media screen and (max-width: 768px) {
+            .heading {
+                padding: 0px 20px;
+            }
+
+            .heading hi {
+                font-size: 36px;
+            }
+
+            .heading p {
+                font-size: 17px;
+                margin-bottom: 0px;
+            }
+
+            .container {
+                padding: 0px;
+            }
+
+            .about {
+                padding: 20px;
+                flex-direction: column;
+            }
+
+            .heading p {
+                font-size: 17px;
+                margin-bottom: 0px;
+            }
+
+            .container {
+                padding: 0px;
+            }
+
+            .about {
+                padding: 20px;
+                flex-direction: column;
+            }
+
+            .about-image {
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+
+            .about-content p {
+                padding: 0px;
+                font-size: 16px;
+            }
+
+            .about-content .read-more {
+                font-size: 16px;
+            }
+        }
+
+        body {
+            min-height: 100vh;
+
+            background: url(images/Bitmap.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+            overflow-y: auto;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Merriweather;
+            box-sizing: border-box;
+
+        }
+
+        nav {
+            vertical-align: middle;
+            padding: 0px 20px;
+
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background: #222F33;
+
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #222F33;
+            padding: 5px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: 0.3s;
+            background: #222F33;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid transparent;
+            transition: .3s;
+            width: 300px;
+            margin: 20px auto;
+
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1);
+            transform: translateY(-10px);
+            background-color: #646D70;
+        }
+
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 0.5rem;
+            font-weight: 900;
+            color: #fbfeff;
+            font-family: Rubik;
+
+        }
+
+        .card-text {
+            color: #ffffff;
+        }
+
+        .card-img-top {
+            width: 300px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--nav bar-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="Background" style="width: 100%; height: 100%; border-radius: 4px">
+                        <img src="images/Logomark.jpg" />
+                        <img src="images/Wordmark.jpg" />
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light shadow-sm d-sm d-block" aria-current="page"
+                                style="color: #fffefa;" href="the ffgma.html">Home</a>
+                        </li>
+               
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #fcfdff; margin: 0px 15px" href="the join.html">join us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #ffffff; margin: 0px 15px" href="our service.html">our service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about us.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #ffffff; margin: 0px 15px">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact us.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #ffffff; margin: 0px 15px">contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gallery.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #ffffff; margin: 0px 15px">gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="FAQ.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #ffffff; margin: 0px 15px">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="our featuers.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #ffffff; margin: 0px 0px">our featuers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="heading">
+        <h1>About us</h1>
+        <p>EcoCobins</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="images/p5.jpg">
+            </div>
+            <div class="about-content">
+                <h2>The benefits of homes and homes preserving the environment</h2>
+                <p>In light of climate change and rising temperatures, preserving
+                    the environment has become one of the most important issues of
+                    concern to the entire world. One of the most important ways to
+                    preserve the environment is to build homes and cottages in a
+                    sustainable way that preserves natural resources and reduces
+                    pollution.</p>
+                <a href="
+            " class="btn btn-light shadow-sm d-sm ">Read More</a>
+            </div>
+
+        </section>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/p1.jpg" class="card-img-top" alt="Card Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">wood house</h5>
+                    <p class="card-text">this house is designed in moddern design,however they are enviromentally
+                        friendly and preserve the enviroment </p>
+                        <a href="buy.html">
+                            <button class="btn btn-dark buy"> buy it Now!</button>
+        </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/p2.jpg" class="card-img-top" alt="Card Image 2">
+                <div class="card-body">
+                    <h5 class="card-title">cool house</h5>
+                    <p class="card-text">this house is designed in moddern design,however they are enviromentally
+                        friendly and preserve the enviroment </p>
+
+                        <a href="buy.html">
+                            <button class="btn btn-dark buy"> buy it Now!</button>
+        </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/p3.jpg" class="card-img-top" alt="Card Image 3">
+                <div class="card-body">
+                    <h5 class="card-title">pretty</h5>
+                    <p class="card-text">this house is designed in moddern design,however they are enviromentally
+                        friendly and preserve the enviroment </p>
+
+                        <a href="buy.html">
+                            <button class="btn btn-dark buy"> buy it Now!</button>
+        </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="InfoEcoCabinsCom"
+            style=" width: 20%;;opacity: 0.60; color: #FFFFFF; font-size: 12px; font-family: Rubik; font-weight: 500;">
+            info@eco-cabins.com</div>
+        <div class="LogoLogoHorizontal"
+            style=" width: 100%; height: 100%; padding-left: 0.16px; padding-right: 0.05px; justify-content: center; align-items: center; gap: 6.07px; display: inline-flex">
+            <img class="Logo" style="width: 32.66px; height: 25.85px" src="images/Logomark.jpg" />
+            <img class="Wordmark" style="width: 96.07px; height: 15.41px" src="images/Wordmark.jpg" />
+        </div>
+        <div class="Cookies"
+            style=" padding: 15px ;opacity: 0.60;  color: white; font-size: 12px; font-family: Rubik; font-weight: 500; word-wrap: break-word">
+            Cookies</div>
+        <div class="Privacybeleid"
+            style="opacity: 0.60;  color: white; font-size: 12px; font-family: Rubik; font-weight: 500; word-wrap: break-word">
+            Privacybeleid</div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

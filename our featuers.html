@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-
+    width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Responsive Features Section</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="our featuers.html" />
+  <style>
+    body {
+      min-height: 100vh;
+
+      background: url(images/Bitmap.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      overflow-y: auto;
+      font-family: Merriweather;
+
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Merriweather;
+      box-sizing: border-box;
+
+    }
+
+    nav {
+      vertical-align: middle;
+      padding: 0px 20px;
+
+    }
+
+    .btn:hover {
+      cursor: pointer;
+      background: #222F33;
+
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .row h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 30px;
+      margin: 0.6em 0;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .column {
+      padding: 0;
+    }
+
+    .card {
+      text-align: center;
+      background: linear-gradient(0deg, #cccccc 10px, transparent 10px);
+      background-repeat: no-repeat;
+      background-position: 0 0.62em;
+      box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.15);
+      border-radius: 0.5em;
+      transition: 0.5s;
+      cursor: pointer;
+      background-color: #222F33;
+    }
+
+    .card .icon {
+      font-size: 2.5em;
+      height: 2em;
+      width: 2em;
+      margin: auto;
+      background-color: #f8f8f8;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #000000;
+    }
+
+    .icon:before {
+      position: absolute;
+      content: "";
+      height: 1.5em;
+      width: 1.5em;
+      border: 0.12em solid #222F33;
+      border-radius: 50%;
+      transition: 0.5s;
+    }
+
+    .card h3 {
+      font-size: 1.3em;
+      margin: 1em 0 1.4em 0;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      color: #ffffff;
+    }
+
+    .card p {
+      line-height: 2em;
+      color: #ffffff;
+    }
+
+    .card:hover {
+      background-position: 0;
+    }
+
+    .card:hover .icon:before {
+      height: 2.25em;
+      width: 2.25em;
+    }
+
+    @media screen and (min-width: 768px) {
+      section {
+        padding: 1em 7em;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      section {
+        padding: 1em;
+      }
+
+      .card {
+        padding: 5em 2em;
+      }
+
+      .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+      }
+    }
+
+    .footer {
+      width: 100%;
+      background-color: #222F33;
+      padding: 10px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="Background" style="width: 100%; height: 100%; border-radius: 4px">
+            <img src="images/Logomark.jpg" />
+            <img src="images/Wordmark.jpg" />
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="btn btn-outline-light shadow-sm d-sm d-block" aria-current="page" style="color: #fffefa;"
+                href="the ffgma.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="btn btn-outline-light shadow-sm d-sm d-block" style="color: #fcfdff; margin: 0px 15px"
+                href="the join.html">join us</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-light shadow-sm d-sm d-block" style="color: #ffffff; margin: 0px 15px"
+                href="our service.html">our service</a>
+            </li>
+            <li class="nav-item">
+              <a href="about us.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                style="color: #ffffff; margin: 0px 15px">about us</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact us.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                style="color: #ffffff; margin: 0px 15px">contact us</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                style="color: #ffffff; margin: 0px 15px">gallery</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="FAQ.html"
+                class="btn btn-outline-light shadow-sm d-sm d-block"
+                style="color: #ffffff; margin: 0px 15px"
+                >FAQ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="our featuers.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                style="color: #ffffff; margin: 0px 0px">our featuers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="row">
+      <h1>Our Features</h1>
+    </div>
+    <div class="row">
+      <!-- Column One -->
+      <div class="column">
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h3>convenient</h3>
+          <p>
+            commitment to eco-friendly practices, our cabins are designed to minimize environmental impact while providing comfort and functionality
+       
+          </p>
+        </div>
+      </div>
+      <!-- Column Two -->
+      <div class="column">
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Super Secure</h3>
+          <p>
+            Security is at the forefront of our priorities at Eco Cabins. We understand the paramount importance of creating a safe and secure living environment for you 
+          </p>
+        </div>
+      </div>
+      <!-- Column Three -->
+      <div class="column">
+        <div class="card">
+          <div class="icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3>Quick Support</h3>
+          <p>
+            At Eco Cabins, our commitment to your well-being extends beyond the design and construction of our cabins – it includes ongoing support 
+       
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="footer">
+    <div class="InfoEcoCabinsCom"
+      style=" width: 20%;;opacity: 0.60; color: #FFFFFF; font-size: 12px; font-family: Rubik; font-weight: 500;">
+      info@eco-cabins.com</div>
+    <div class="LogoLogoHorizontal"
+      style=" width: 100%; height: 100%; padding-left: 0.16px; padding-right: 0.05px; justify-content: center; align-items: center; gap: 6.07px; display: inline-flex">
+      <img class="Logo" style="width: 32.66px; height: 25.85px" src="images/Logomark.jpg" />
+      <img class="Wordmark" style="width: 96.07px; height: 15.41px" src="images/Wordmark.jpg" />
+    </div>
+    <div class="Cookies"
+      style=" padding: 15px ;opacity: 0.60;  color: white; font-size: 12px; font-family: Rubik; font-weight: 500; word-wrap: break-word">
+      Cookies</div>
+    <div class="Privacybeleid"
+      style="opacity: 0.60;  color: white; font-size: 12px; font-family: Rubik; font-weight: 500; word-wrap: break-word">
+      Privacybeleid</div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

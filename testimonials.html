@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Testimonial</title>
+    <link rel="shortcut icon" href="emoji-grin.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Merriweather;
+            box-sizing: border-box;
+
+        }
+
+        nav {
+            vertical-align: middle;
+            padding: 0px 20px;
+
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background: #222F33;
+
+        }
+
+        body {
+            min-height: 100vh;
+
+            background: url(images/Bitmap.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+            overflow-y: auto;
+        }
+
+
+        .testimonial-area {
+            padding-top: 50px;
+        }
+
+        .carousel-item {
+            text-align: center;
+        }
+
+        .icon-area {
+            margin-bottom: 20px;
+        }
+
+        .icon-area svg {
+            width: 80px;
+            height: 80px;
+            fill: #ffffff;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content p {
+            font-size: 25px;
+            color: #fcfdff;
+            font-family: Rubik;
+        }
+
+        .content img {
+            width: 250px;
+            max-width: 100%;
+            margin-top: 20px;
+            border-radius: 50%;
+            transition: .3s;
+
+        }
+
+        .content img:hover {
+            transform: translateY(-10px);
+
+
+        }
+
+        h5 {
+            color: #d6dadd;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            margin: auto;
+            width: 55px;
+            height: 55px;
+            font-size: 1.5rem;
+            color: #343a40;
+            background-color: #d4d4d4;
+            border: 2px solid #343a40;
+            border-radius: 50%;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #222F33;
+            border-radius: 50%;
+            margin: 2px;
+        }
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+        .name_box {
+            background: #222F33;
+            border-radius: 10px;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid transparent;
+            transition: .3s;
+            margin-top: 10px;
+        }
+
+        .name_box:hover {
+            border: 1px solid white;
+            transform: translateY(-10px);
+            background-color: #646D70;
+
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #222F33;
+            padding: 0px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer div {
+            color: #FFFFFF;
+            font-size: 12px;
+            font-family: Rubik;
+            font-weight: 500;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="Background" style="width: 100%; height: 100%; border-radius: 4px">
+                        <img src="images/Logomark.jpg" />
+                        <img src="images/Wordmark.jpg" />
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light shadow-sm d-sm d-block" aria-current="page"
+                                style="color: #fffefa;" href="the ffgma.html">Home</a>
+                        </li>
+              
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #fcfdff; margin: 0px 15px" href="the join.html">join us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #ffffff; margin: 0px 15px" href="our service.html">our service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about us.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #ffffff; margin: 0px 15px">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact us.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #ffffff; margin: 0px 20px">contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gallery.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #ffffff; margin: 0px 15px">gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                              href="FAQ.html"
+                              class="btn btn-outline-light shadow-sm d-sm d-block"
+                              style="color: #ffffff; margin: 0px 15px"
+                              >FAQ</a
+                            >
+                          </li>
+                        <li class="nav-item">
+                            <a href="our featuers.html" class="btn btn-outline-light shadow-sm d-sm d-block"
+                                style="color: #ffffff; margin: 0px 0px">our featuers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="testimonial-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="icon-area">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                                        class="bi bi-chat-heart-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15m0-9.007c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <p>Eco Cabins has exceeded all my expectations. The attention to detail in their design and the commitment to sustainability are truly commendable. Living in one of their cabins has been a game</p>
+
+
+
+
+                                    <img src="images/p1.jpg" alt="User Photo">
+                                    <div class="name_box">
+                                        <h5>tom martin</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="icon-area">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                                        class="bi bi-chat-heart-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15m0-9.007c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <p>Eco Cabins has exceeded all my expectations. The attention to detail in their design and the commitment to sustainability are truly commendable. Living in one of their cabins has been a game</p>
+                                    <img src="images/p2.jpg" alt="User Photo">
+                                    <div class="name_box">
+                                        <h5> alis steve</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="icon-area">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                                        class="bi bi-chat-heart-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15m0-9.007c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <p>Eco Cabins has exceeded all my expectations. The attention to detail in their design and the commitment to sustainability are truly commendable. Living in one of their cabins has been a game</p>
+
+                                    <img src="images/p5.jpg" alt="User Photo">
+                                    <div class="name_box">
+                                        <h5>jhon harry</h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="InfoEcoCabinsCom"
+            style=" width: 20%;;opacity: 0.60; color: #FFFFFF; font-size: 12px; font-family: Rubik; font-weight: 500;">
+            info@eco-cabins.com</div>
+        <div class="LogoLogoHorizontal"
+            style=" width: 100%; height: 100%; padding-left: 0.16px; padding-right: 0.05px; justify-content: center; align-items: center; gap: 6.07px; display: inline-flex">
+            <img class="Logo" style="width: 32.66px; height: 25.85px" src="images/Logomark.jpg" />
+            <img class="Wordmark" style="width: 96.07px; height: 15.41px" src="images/Wordmark.jpg" />
+        </div>
+        <div class="Cookies"
+            style=" padding: 15px ;opacity: 0.60;  color: white; font-size: 12px; font-family: Rubik; font-weight: 500; word-wrap: break-word">
+            Cookies</div>
+        <div class="Privacybeleid"
+            style="opacity: 0.60;  color: white; font-size: 12px; font-family: Rubik; font-weight: 500; word-wrap: break-word">
+            Privacybeleid</div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
